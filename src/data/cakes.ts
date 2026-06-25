@@ -1,0 +1,305 @@
+export interface CakeData {
+  _id: string;
+  name: string;
+  description: string;
+  price: string;
+  priceOptions?: { weight: string; price: string }[];
+  imageUrl: string;
+  category: string;
+  isVideo?: boolean;
+}
+
+export const cakes: CakeData[] = [
+  {
+    _id: "1",
+    name: "Chocolate Truffle",
+    description: "Delicious chocolate cake with truffle frosting.",
+    price: "₹500 - ₹900",
+    priceOptions: [
+      { weight: "½ Kg", price: "₹500" },
+      { weight: "1 Kg", price: "₹900" },
+    ],
+    imageUrl: "/cake2.jpeg",
+    category: "Chocolate Cakes",
+    isVideo: false,
+  },
+  {
+    _id: "2",
+    name: "Choco Chips",
+    description: "Rich chocolate cake loaded with choco chips.",
+    price: "₹525 - ₹950",
+    priceOptions: [
+      { weight: "½ Kg", price: "₹525" },
+      { weight: "1 Kg", price: "₹950" },
+    ],
+    imageUrl: "/cake3.jpeg",
+    category: "Chocolate Cakes",
+    isVideo: false,
+  },
+  {
+    _id: "3",
+    name: "Dutch Chocolate",
+    description: "Classic premium Dutch chocolate sponge and ganache.",
+    price: "₹550 - ₹1000",
+    priceOptions: [
+      { weight: "½ Kg", price: "₹550" },
+      { weight: "1 Kg", price: "₹1000" },
+    ],
+    imageUrl: "/cake4.jpeg",
+    category: "Chocolate Cakes",
+    isVideo: false,
+  },
+  {
+    _id: "4",
+    name: "Dalgona Coffee Chocolate",
+    description: "Unique blend of coffee and chocolate.",
+    price: "₹550 - ₹1000",
+    priceOptions: [
+      { weight: "½ Kg", price: "₹550" },
+      { weight: "1 Kg", price: "₹1000" },
+    ],
+    imageUrl: "/cake5.jpeg",
+    category: "Dalgona Special",
+    isVideo: false,
+  },
+  {
+    _id: "5",
+    name: "Dalgona Coffee Chocolate (Pure)",
+    description: "Premium pure chocolate with Dalgona coffee.",
+    price: "₹800 - ₹1500",
+    priceOptions: [
+      { weight: "½ Kg", price: "₹800" },
+      { weight: "1 Kg", price: "₹1500" },
+    ],
+    imageUrl: "/cake6.jpeg",
+    category: "Dalgona Special",
+    isVideo: false,
+  },
+  {
+    _id: "6",
+    name: "Pineapple",
+    description: "Fresh cream cake with juicy pineapple pieces.",
+    price: "₹450 - ₹800",
+    priceOptions: [
+      { weight: "½ Kg", price: "₹450" },
+      { weight: "1 Kg", price: "₹800" },
+    ],
+    imageUrl: "/cake8.jpeg",
+    category: "Fresh Cream Cakes",
+    isVideo: false,
+  },
+  {
+    _id: "7",
+    name: "Black Forest",
+    description: "Classic black forest with fresh cream and cherries.",
+    price: "₹500 - ₹900",
+    priceOptions: [
+      { weight: "½ Kg", price: "₹500" },
+      { weight: "1 Kg", price: "₹900" },
+    ],
+    imageUrl: "/cake9.jpeg",
+    category: "Fresh Cream Cakes",
+    isVideo: false,
+  },
+  {
+    _id: "8",
+    name: "White Forest",
+    description: "White chocolate shavings with fresh cream and cherry.",
+    price: "₹500 - ₹900",
+    priceOptions: [
+      { weight: "½ Kg", price: "₹500" },
+      { weight: "1 Kg", price: "₹900" },
+    ],
+    imageUrl: "/cake10.jpeg",
+    category: "Fresh Cream Cakes",
+    isVideo: false,
+  },
+  {
+    _id: "9",
+    name: "Strawberry",
+    description: "Fresh cream cake with strawberry flavor.",
+    price: "₹500 - ₹900",
+    priceOptions: [
+      { weight: "½ Kg", price: "₹500" },
+      { weight: "1 Kg", price: "₹900" },
+    ],
+    imageUrl: "/cake11.jpeg",
+    category: "Fresh Cream Cakes",
+    isVideo: false,
+  },
+  {
+    _id: "10",
+    name: "Butterscotch",
+    description: "Crunchy butterscotch praline with fresh cream.",
+    price: "₹550 - ₹1100",
+    priceOptions: [
+      { weight: "½ Kg", price: "₹550" },
+      { weight: "1 Kg", price: "₹1100" },
+    ],
+    imageUrl: "/cake12.jpeg",
+    category: "Fresh Cream Cakes",
+    isVideo: false,
+  },
+  {
+    _id: "11",
+    name: "Oreo",
+    description: "Cookies and cream layered premium cake.",
+    price: "₹550 - ₹1000",
+    priceOptions: [
+      { weight: "½ Kg", price: "₹550" },
+      { weight: "1 Kg", price: "₹1000" },
+    ],
+    imageUrl: "/cake13.jpeg",
+    category: "Premium Cakes",
+    isVideo: false,
+  },
+  {
+    _id: "12",
+    name: "Kitkat",
+    description: "Chocolate cake surrounded by Kitkat wafers.",
+    price: "₹650 - ₹1200",
+    priceOptions: [
+      { weight: "½ Kg", price: "₹650" },
+      { weight: "1 Kg", price: "₹1200" },
+    ],
+    imageUrl: "/cake14.jpeg",
+    category: "Premium Cakes",
+    isVideo: false,
+  },
+  {
+    _id: "13",
+    name: "Ferrero Rocher",
+    description: "Premium chocolate cake with Ferrero Rocher.",
+    price: "₹700 - ₹1300",
+    priceOptions: [
+      { weight: "½ Kg", price: "₹700" },
+      { weight: "1 Kg", price: "₹1300" },
+    ],
+    imageUrl: "/cake16.jpeg",
+    category: "Premium Cakes",
+    isVideo: false,
+  },
+  {
+    _id: "14",
+    name: "Lotus Biscoff",
+    description: "Trendy Lotus Biscoff flavor and crunch.",
+    price: "₹750 - ₹1400",
+    priceOptions: [
+      { weight: "½ Kg", price: "₹750" },
+      { weight: "1 Kg", price: "₹1400" },
+    ],
+    imageUrl: "/cake2.jpeg",
+    category: "Premium Cakes",
+    isVideo: false,
+  },
+  {
+    _id: "15",
+    name: "Pure Chocolate Truffle",
+    description: "100% pure chocolate decadent truffle.",
+    price: "₹800 - ₹1500",
+    priceOptions: [
+      { weight: "½ Kg", price: "₹800" },
+      { weight: "1 Kg", price: "₹1500" },
+    ],
+    imageUrl: "/cake3.jpeg",
+    category: "Premium Cakes",
+    isVideo: false,
+  },
+  {
+    _id: "16",
+    name: "Photo Cake",
+    description: "Edible photo printed on your favorite cake flavor.",
+    price: "₹650 onwards",
+    priceOptions: [
+      { weight: "½ Kg", price: "₹650" },
+      { weight: "1 Kg", price: "₹1300" },
+    ],
+    imageUrl: "/cake4.jpeg",
+    category: "Special Cakes",
+    isVideo: false,
+  },
+  {
+    _id: "17",
+    name: "Theme Cake 1",
+    description: "Beautiful custom theme cake design.",
+    price: "₹1000 onwards",
+    priceOptions: [
+      { weight: "1 Kg", price: "₹1000" },
+    ],
+    imageUrl: "/cake1.jpeg",
+    category: "Special Cakes",
+    isVideo: false,
+  },
+  {
+    _id: "18",
+    name: "Theme Cake 2",
+    description: "Elegant customized theme cake.",
+    price: "₹1000 onwards",
+    priceOptions: [
+      { weight: "1 Kg", price: "₹1000" },
+    ],
+    imageUrl: "/cake7.jpeg",
+    category: "Special Cakes",
+    isVideo: false,
+  },
+  {
+    _id: "19",
+    name: "Theme Cake 3",
+    description: "Creative custom fondant design.",
+    price: "₹1000 onwards",
+    priceOptions: [
+      { weight: "1 Kg", price: "₹1000" },
+    ],
+    imageUrl: "/cake15.jpeg",
+    category: "Special Cakes",
+    isVideo: false,
+  },
+  {
+    _id: "20",
+    name: "Designer Cake",
+    description: "Exquisite designer cake for grand occasions.",
+    price: "₹1200 onwards",
+    priceOptions: [
+      { weight: "1 Kg", price: "₹1200" },
+    ],
+    imageUrl: "/cake5.jpeg",
+    category: "Special Cakes",
+    isVideo: false,
+  },
+  {
+    _id: "21",
+    name: "Rava Cake",
+    description: "Traditional and wholesome Rava cake.",
+    price: "₹750 / kg",
+    priceOptions: [
+      { weight: "1 Kg", price: "₹750" },
+    ],
+    imageUrl: "/cake6.jpeg",
+    category: "Ingredients based",
+    isVideo: false,
+  },
+  {
+    _id: "22",
+    name: "Whole Wheat Cake",
+    description: "Healthy whole wheat based cake.",
+    price: "₹750 / kg",
+    priceOptions: [
+      { weight: "1 Kg", price: "₹750" },
+    ],
+    imageUrl: "/cake8.jpeg",
+    category: "Ingredients based",
+    isVideo: false,
+  },
+  {
+    _id: "23",
+    name: "Mava Cake",
+    description: "Rich, traditional Indian Mava cake.",
+    price: "₹1000 / kg",
+    priceOptions: [
+      { weight: "1 Kg", price: "₹1000" },
+    ],
+    imageUrl: "/cake9.jpeg",
+    category: "Ingredients based",
+    isVideo: false,
+  }
+];

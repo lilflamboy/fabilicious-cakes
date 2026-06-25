@@ -1,0 +1,14 @@
+import { NextRequest, NextResponse } from "next/server";
+
+// POST /api/auth — verify admin password
+export async function POST(req: NextRequest) {
+  try {
+    const { password } = await req.json();
+    if (password === process.env.ADMIN_PASSWORD) {
+      return NextResponse.json({ success: true });
+    }
+    return NextResponse.json({ error: "Wrong password" }, { status: 401 });
+  } catch {
+    return NextResponse.json({ error: "Invalid request" }, { status: 400 });
+  }
+}
