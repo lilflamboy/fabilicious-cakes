@@ -1,8 +1,7 @@
-"use strict";
 "use client";
 
 import { useForm } from "react-hook-form";
-import { useState, useEffect } from "react";
+import { useState, Suspense } from "react";
 import { toast } from "react-hot-toast";
 import { MapPin, Phone, Send } from "lucide-react";
 import { useSearchParams } from "next/navigation";
@@ -15,7 +14,7 @@ type FormData = {
   date: string;
 };
 
-export default function Contact() {
+function ContactContent() {
   const searchParams = useSearchParams();
   const prefilledCake = searchParams?.get("cake") || "";
 
@@ -183,5 +182,13 @@ Please let me know if this is possible and what the total cost will be. Thank yo
         </div>
       </div>
     </div>
+  );
+}
+
+export default function Contact() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ContactContent />
+    </Suspense>
   );
 }
