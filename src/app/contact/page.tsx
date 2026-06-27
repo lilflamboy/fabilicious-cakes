@@ -168,7 +168,7 @@ Please let me know if this is possible and what the total cost will be. Thank yo
                   </div>
                   <div>
                     <h4 className="font-bold text-foreground">Phone / WhatsApp</h4>
-                    <p className="text-foreground/80">+91 00000 00000</p>
+                    <p className="text-foreground/80">+91 70212 66239</p>
                   </div>
                 </div>
 
